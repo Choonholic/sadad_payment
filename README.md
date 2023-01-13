@@ -1,2 +1,2 @@
 # sadad_payment
- Payment Solution for Iran SADAD Bank.
+ Payment Solution for Iran SADAD Bank
