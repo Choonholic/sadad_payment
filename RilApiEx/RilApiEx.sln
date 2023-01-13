@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RilApiEx", "RilApiEx\RilApiEx.vcproj", "{087E8A39-211A-44B3-BDCD-227FD3CC75CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|PAY600 (ARMV4I) = Debug|PAY600 (ARMV4I)
+		Release|PAY600 (ARMV4I) = Release|PAY600 (ARMV4I)
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{087E8A39-211A-44B3-BDCD-227FD3CC75CC}.Debug|PAY600 (ARMV4I).ActiveCfg = Debug|PAY600 (ARMV4I)
+		{087E8A39-211A-44B3-BDCD-227FD3CC75CC}.Debug|PAY600 (ARMV4I).Build.0 = Debug|PAY600 (ARMV4I)
+		{087E8A39-211A-44B3-BDCD-227FD3CC75CC}.Debug|PAY600 (ARMV4I).Deploy.0 = Debug|PAY600 (ARMV4I)
+		{087E8A39-211A-44B3-BDCD-227FD3CC75CC}.Release|PAY600 (ARMV4I).ActiveCfg = Release|PAY600 (ARMV4I)
+		{087E8A39-211A-44B3-BDCD-227FD3CC75CC}.Release|PAY600 (ARMV4I).Build.0 = Release|PAY600 (ARMV4I)
+		{087E8A39-211A-44B3-BDCD-227FD3CC75CC}.Release|PAY600 (ARMV4I).Deploy.0 = Release|PAY600 (ARMV4I)
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

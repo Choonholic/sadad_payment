@@ -1,0 +1,35 @@
+; RilApiEx.def : Declares the module parameters for the DLL.
+
+LIBRARY      "RilApiEx"
+
+EXPORTS
+    RilApi_Initialize
+    RilApi_Cleanup
+    RilApi_GetLastResult
+    RilApi_GetEquipmentState
+    RilApi_SetEquipmentState
+    RilApi_GetEquipmentInfo
+    RilApi_GetVersionInfo
+    RilApi_GetSimInserted
+    RilApi_GetPhoneLockedState
+    RilApi_GetPinCount
+    RilApi_UnlockPhone
+    RilApi_GetLockingStatus
+    RilApi_SetLockingStatus
+    RilApi_ChangeLockingPassword
+    RilApi_GetRegistrationStatus
+    RilApi_GetPacketDomainRegistrationStatus
+    RilApi_GetCurrentOperator
+    RilApi_GetSignalStrength
+    RilApi_GetPhoneStatus
+    RilApi_DataConnect
+    RilApi_DataDisconnect
+    RilApi_GetDataConnectionStatus
+    RilApi_GetDataConnectionStatusStandAlone
+    RilApi_AddGprsEntry
+    RilApi_DeleteGprsEntry
+    RilApi_GetGprsEntryInfo
+    RilApi_EnableGprsEntry
+    RilApi_DisableGprsEntry
+    RilApi_SendATCommand
+    RilApi_GetICCID

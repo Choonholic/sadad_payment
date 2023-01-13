@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PaymentConfig>
+	<ConSet>
+		<Con>
+			<CT>
+				<use>0</use>
+				<Opt>
+					<idx>0</idx>
+					<en>DialUp</en>
+					<fn>DialUp</fn>
+				</Opt>
+				<Opt>
+					<idx>1</idx>
+					<en>LAN</en>
+					<fn>LAN</fn>
+				</Opt>
+			</CT>
+			<GPRS>
+			</GPRS>
+			<TPL>
+				<Opt>
+					<idx>0</idx>
+					<num>63482</num>
+				</Opt>
+				<Opt>
+					<idx>1</idx>
+					<num>63482</num>
+				</Opt>
+				<Opt>
+					<idx>2</idx>
+					<num>63482</num>
+				</Opt>
+				<Opt>
+					<idx>3</idx>
+					<num>63482</num>
+				</Opt>
+				<Opt>
+					<idx>4</idx>
+					<num>63482</num>
+				</Opt>
+				<Opt>
+					<idx>5</idx>
+					<num>63482</num>
+				</Opt>
+				<Opt>
+					<idx>6</idx>
+					<num>63482</num>
+				</Opt>
+				<Opt>
+					<idx>7</idx>
+					<num>63482</num>
+				</Opt>
+			</TPL>
+			<TMSPL>
+				<use>0</use>
+				<Opt>
+					<idx>0</idx>
+					<num>63482</num>
+				</Opt>
+				<Opt>
+					<idx>1</idx>
+					<num>63482</num>
+				</Opt>
+				<Opt>
+					<idx>2</idx>
+					<num>63482</num>
+				</Opt>
+				<Opt>
+					<idx>3</idx>
+					<num></num>
+				</Opt>
+			</TMSPL>
+			<Server>
+				<ip>89.235.65.162</ip>
+				<port>8009</port>
+			</Server>
+		</Con>
+		<TO>
+			<cto>60</cto>
+			<cdto>60</cdto>
+			<pinto>30</pinto>
+			<ato>200</ato>
+			<rto>200</rto>
+			<sto>60</sto>
+		</TO>
+		<Net>
+			<ip></ip>
+			<gw></gw>
+			<sm></sm>
+		</Net>
+	</ConSet>
+	<Sys>
+		<Tm>
+			<beep></beep>
+			<lang>
+				<use>1</use>
+				<Opt>
+					<idx>0</idx>
+					<en>English</en>
+					<fn>انگلیسی</fn>
+				</Opt>
+				<Opt>
+					<idx>1</idx>
+					<en>Farsi</en>
+					<fn>فارسی</fn>
+				</Opt>
+			</lang>
+			<date>20141014</date>
+			<time>221000</time>
+		</Tm>
+		<Mc>
+			<stel>42849000-021</stel>
+			<mtel>987453621844</mtel>
+			<mname>
+				<en>Test Shop</en>
+				<fn>تست فروشگاه</fn>
+			</mname>
+			<mpc>9876543210</mpc>
+			<mad>
+				<en></en>
+				<fn></fn>
+			</mad>
+		</Mc>
+	</Sys>
+	<Trs>
+		<pem>021</pem>
+		<nii>009</nii>
+		<pconcd>14</pconcd>
+		<catid>C0000200</catid>
+		<caaic>M00000000000083</caaic>
+		<tips>0</tips>
+		<atype>0</atype>
+		<RP>
+			<Opt>
+				<code>0</code>
+				<fn>عملیات موفق</fn>
+				<en>Successful</en>
+			</Opt>
+			<Opt>
+				<code>1</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>2</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>3</code>
+				<fn>پذیرنده نا معتبر</fn>
+				<en>Terminal Not registered</en>
+			</Opt>
+			<Opt>
+				<code>4</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>5</code>
+				<fn>صرف نظر از تراکنش</fn>
+				<en>Reject Transaction</en>
+			</Opt>
+			<Opt>
+				<code>6</code>
+				<fn>خطا در شروع بکار</fn>
+				<en>Logon Problem</en>
+			</Opt>
+			<Opt>
+				<code>7</code>
+				<fn>شماره تائید موجود نیست</fn>
+				<en>No Authentication Identification Code</en>
+			</Opt>
+			<Opt>
+				<code>8</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>9</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>10</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>11</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>12</code>
+				<fn>تراکنش مردود شد</fn>
+				<en>Incorrect Transaction</en>
+			</Opt>
+			<Opt>
+				<code>13</code>
+				<fn>مبلغ اشتباه</fn>
+				<en>Incorrect Amount</en>
+			</Opt>
+			<Opt>
+				<code>14</code>
+				<fn>کارت ناشناخته</fn>
+				<en>Unknown Card</en>
+			</Opt>
+			<Opt>
+				<code>15</code>
+				<fn>قبلا باز شده</fn>
+				<en>Opened Before</en>
+			</Opt>
+			<Opt>
+				<code>16</code>
+				<fn>قبلا بسته شده</fn>
+				<en>Closed Before</en>
+			</Opt>
+			<Opt>
+				<code>17</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>18</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>19</code>
+				<fn>دوباره سعی کنید</fn>
+				<en>Try Again</en>
+			</Opt>
+			<Opt>
+				<code>20</code>
+				<fn>قبض مورد تایید نیست</fn>
+				<en>Bill Not Accepted</en>
+			</Opt>
+			<Opt>
+				<code>21</code>
+				<fn>محدودیت زمان کاری</fn>
+				<en>Time Working Problem</en>
+			</Opt>
+			<Opt>
+				<code>22</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>23</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>24</code>
+				<fn>عملیات پایان روز</fn>
+				<en>End Of Day Operation</en>
+			</Opt>
+			<Opt>
+				<code>25</code>
+				<fn>سریال پایانه تعریف نشده</fn>
+				<en>POS Serial Not Accepted</en>
+			</Opt>	
+			<Opt>
+				<code>26</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>27</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>28</code>
+				<fn></fn>
+				<en></en>
+			</Opt>	
+			<Opt>
+				<code>29</code>
+				<fn>عملیات پایان روز</fn>
+				<en>End Of Day Operation</en>
+			</Opt>	
+			<Opt>
+				<code>30</code>
+				<fn>فرمت اشتباه</fn>
+				<en>Incorrect Format</en>
+			</Opt>	
+			<Opt>
+				<code>31</code>
+				<fn>عدم پذیرش صادرکننده</fn>
+				<en>Rejected By Issue Bank</en>
+			</Opt>	
+			<Opt>
+				<code>32</code>
+				<fn>پایانه غیرفعال</fn>
+				<en>Inactive Terminal</en>
+			</Opt>	
+			<Opt>
+				<code>33</code>
+				<fn>کارت منقضی</fn>
+				<en>Expired Card</en>
+			</Opt>	
+			<Opt>
+				<code>34</code>
+				<fn>تراکنش اصلی نا موفق</fn>
+				<en>Orginal Transaction Not Approved</en>
+			</Opt>	
+			<Opt>
+				<code>35</code>
+				<fn></fn>
+				<en></en>
+			</Opt>	
+			<Opt>
+				<code>36</code>
+				<fn></fn>
+				<en></en>
+			</Opt>	
+			<Opt>
+				<code>37</code>
+				<fn></fn>
+				<en></en>
+			</Opt>	
+			<Opt>
+				<code>38</code>
+				<fn>رمز غلط بیش از حد</fn>
+				<en>Pin Entry Error</en>
+			</Opt>	
+			<Opt>
+				<code>39</code>
+				<fn></fn>
+				<en></en>
+			</Opt>	
+			<Opt>
+				<code>40</code>
+				<fn></fn>
+				<en></en>
+			</Opt>	
+			<Opt>
+				<code>41</code>
+				<fn>کارت مفقودی</fn>
+				<en>Lost Card</en>
+			</Opt>	
+			<Opt>
+				<code>42</code>
+				<fn></fn>
+				<en></en>
+			</Opt>	
+			<Opt>
+				<code>43</code>
+				<fn>کارت دزدی</fn>
+				<en>Stolen Card</en>
+			</Opt>	
+			<Opt>
+				<code>44</code>
+				<fn>شارژ موجود نیست</fn>
+				<en>Charge Not Available</en>
+			</Opt>	
+			<Opt>
+				<code>45</code>
+				<fn></fn>
+				<en></en>
+			</Opt>	
+			<Opt>
+				<code>46</code>
+				<fn></fn>
+				<en></en>
+			</Opt>	
+			<Opt>
+				<code>47</code>
+				<fn>زمان منقضی شده</fn>
+				<en>Expired Date</en>
+			</Opt>	
+			<Opt>
+				<code>48</code>
+				<fn>قبلا انجام شده</fn>
+				<en>Done Before</en>
+			</Opt>	
+			<Opt>
+				<code>49</code>
+				<fn></fn>
+				<en></en>
+			</Opt>	
+			<Opt>
+				<code>50</code>
+				<fn></fn>
+				<en></en>
+			</Opt>	
+			<Opt>
+				<code>51</code>
+				<fn>موجودی ناکافی</fn>
+				<en>Insufficient Inventory</en>
+			</Opt>	
+			<Opt>
+				<code>52</code>
+				<fn></fn>
+				<en></en>
+			</Opt>	
+			<Opt>
+				<code>53</code>
+				<fn></fn>
+				<en></en>
+			</Opt>	
+			<Opt>
+				<code>54</code>
+				<fn>کارت منقضی</fn>
+				<en>Expired Card</en>
+			</Opt>	
+			<Opt>
+				<code>55</code>
+				<fn>رمز اشتباه</fn>
+				<en>Invalid Password</en>
+			</Opt>	
+			<Opt>
+				<code>56</code>
+				<fn>کارت اشتباه</fn>
+				<en>Invalid Card</en>
+			</Opt>	
+			<Opt>
+				<code>57</code>
+				<fn>عملیات نامعتبر</fn>
+				<en>Invalid Operation</en>
+			</Opt>
+			<Opt>
+				<code>58</code>
+				<fn>عملیات نامعتبر</fn>
+				<en>Invalid Operation</en>
+			</Opt>
+			<Opt>
+				<code>59</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>60</code>
+				<fn>لیست سیاه آماده نیست</fn>
+				<en>No Blacklist Ready</en>
+			</Opt>
+			<Opt>
+				<code>61</code>
+				<fn>محدودیت مبلغ</fn>
+				<en>Amount Overflow</en>
+			</Opt>
+			<Opt>
+				<code>62</code>
+				<fn>محدودیت مبلغ</fn>
+				<en>Amount Overflow</en>
+			</Opt>
+			<Opt>
+				<code>63</code>
+				<fn>مک اشتباه</fn>
+				<en>Incorrect MAC</en>
+			</Opt>
+			<Opt>
+				<code>64</code>
+				<fn>تراکنش اشتباه</fn>
+				<en>Incorrect Transaction</en>
+			</Opt>
+			<Opt>
+				<code>65</code>
+				<fn>تعداد بیش از حد</fn>
+				<en>Count Overflow</en>
+			</Opt>
+			<Opt>
+				<code>66</code>
+				<fn>حساب مسدود</fn>
+				<en>Blocked Account</en>
+			</Opt>
+			<Opt>
+				<code>67</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>68</code>
+				<fn>موجودی اشتباه</fn>
+				<en>Incorrect Balance</en>
+			</Opt>
+			<Opt>
+				<code>69</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>70</code>
+				<fn>تراکنش اشتباه</fn>
+				<en>Incorrect Transaction</en>
+			</Opt>
+			<Opt>
+				<code>71</code>
+				<fn>تراکنش اشتباه</fn>
+				<en>Incorrect Transaction</en>
+			</Opt>
+			<Opt>
+				<code>72</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>73</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>74</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>75</code>
+				<fn>پسورد اشتباه بیش از حد</fn>
+				<en>Invalid Password Overflow</en>
+			</Opt>
+			<Opt>
+				<code>76</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>77</code>
+				<fn>روز مالی اشتباه</fn>
+				<en>Incorrect Credit Day</en>
+			</Opt>
+			<Opt>
+				<code>78</code>
+				<fn>کارت فعال نیست</fn>
+				<en>Card is not Active</en>
+			</Opt>
+			<Opt>
+				<code>79</code>
+				<fn>حساب تعریف نشده</fn>
+				<en>Undefined Account</en>
+			</Opt>
+			<Opt>
+				<code>80</code>
+				<fn>تراکنش نا موفق</fn>
+				<en>Host Down</en>
+			</Opt>
+			<Opt>
+				<code>81</code>
+				<fn>کارت باطل شده</fn>
+				<en>Omitted Card</en>
+			</Opt>
+			<Opt>
+				<code>82</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>83</code>
+				<fn>مرکز آماده نیست</fn>
+				<en>Center Is Not Present</en>
+			</Opt>
+			<Opt>
+				<code>84</code>
+				<fn>مرکز آماده نیست</fn>
+				<en>Center Is Not Present</en>
+			</Opt>
+			<Opt>
+				<code>85</code>
+				<fn>خطای داخلی</fn>
+				<en>Internal Error</en>
+			</Opt>
+			<Opt>
+				<code>86</code>
+				<fn>پایانه نامعتبر</fn>
+				<en>Forbidden POS</en>
+			</Opt>
+			<Opt>
+				<code>87</code>
+				<fn>خطای رمز</fn>
+				<en>Password Error</en>
+			</Opt>
+			<Opt>
+				<code>88</code>
+				<fn>خطای داخلی</fn>
+				<en>Internal Error</en>
+			</Opt>
+			<Opt>
+				<code>89</code>
+				<fn>خطای داخلی</fn>
+				<en>Internal Error</en>
+			</Opt>
+			<Opt>
+				<code>90</code>
+				<fn>عملیات پایان روز</fn>
+				<en>End Of Day Operation</en>
+			</Opt>
+			<Opt>
+				<code>91</code>
+				<fn>صادر کننده غیر فعال</fn>
+				<en>Issuer Down</en>
+			</Opt>
+			<Opt>
+				<code>92</code>
+				<fn>بانک صادر کننده نامعتبر</fn>
+				<en>Invalid Bank Issuer</en>
+			</Opt>
+			<Opt>
+				<code>93</code>
+				<fn>صف پرشده</fn>
+				<en>Queue Overflow</en>
+			</Opt>
+			<Opt>
+				<code>94</code>
+				<fn>تراکنش تکراری</fn>
+				<en>Duplicated Transaction</en>
+			</Opt>
+			<Opt>
+				<code>95</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>96</code>
+				<fn>خطای مرکزی</fn>
+				<en>Central Error</en>
+			</Opt>
+			<Opt>
+				<code>97</code>
+				<fn>شروع بکار نشده</fn>
+				<en>Not Started</en>
+			</Opt>
+			<Opt>
+				<code>98</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+			<Opt>
+				<code>99</code>
+				<fn></fn>
+				<en></en>
+			</Opt>
+		</RP>
+		<Billsc>
+			<Opt>
+				<sid>1</sid>
+				<fn>سازمان آب و فاضلاب</fn>
+				<en>Water and Sanitation Agency</en>
+			</Opt>
+			<Opt>
+				<sid>2</sid>
+				<fn>اداره برق</fn>
+				<en>Electric</en>
+			</Opt>
+			<Opt>
+				<sid>3</sid>
+				<fn>شرکت گاز</fn>
+				<en>Gas</en>
+			</Opt>
+			<Opt>
+				<sid>4</sid>
+				<fn>شرکت مخابرات ایران_تلفن ثابت</fn>
+				<en>Telephone</en>
+			</Opt>
+			<Opt>
+				<sid>5</sid>
+				<fn>شرکت مخابرات _تلفن همراه</fn>
+				<en>Mobile</en>
+			</Opt>
+			<Opt>
+				<sid>6</sid>
+				<fn>عوارض شهرداری</fn>
+				<en>Ministry</en>
+			</Opt>
+			<Opt>
+				<sid>7</sid>
+				<fn>راهنمایی رانندگی</fn>
+				<en>Police</en>
+			</Opt>
+			<Opt>
+				<sid>8</sid>
+				<fn>قبوص خاص و خرید شارژ</fn>
+				<en>Other</en>
+			</Opt>
+		</Billsc>
+		<Bank>
+			<Opt>
+				<bin>10060</bin>
+				<fn>بانک مرکزی ج.ا.ا</fn>
+				<en>Centeral Bank of Iran</en>
+			</Opt>
+			<Opt>
+				<bin>627961</bin>
+				<fn>بانک صنعت و معدن</fn>
+				<en>Sanat Madan</en>
+			</Opt>
+			<Opt>
+				<bin>610433</bin>
+				<fn>بانک ملت</fn>
+				<en>Mellat</en>
+			</Opt>
+			<Opt>
+				<bin>589463</bin>
+				<fn>بانک رفاه کارگران</fn>
+				<en>Refah</en>
+			</Opt>
+			<Opt>
+				<bin>628023</bin>
+				<fn>بانک مسکن</fn>
+				<en>Maskan</en>
+			</Opt>
+			<Opt>
+				<bin>589210</bin>
+				<fn>بانک سپه</fn>
+				<en>Sepah</en>
+			</Opt>
+			<Opt>
+				<bin>603770</bin>
+				<fn>بانک کشاورزی</fn>
+				<en>Agri Bank</en>
+			</Opt>
+			<Opt>
+				<bin>603799</bin>
+				<fn>بانک ملی ایران</fn>
+				<en>Melli</en>
+			</Opt>
+			<Opt>
+				<bin>627353</bin>
+				<fn>بانک تجارت</fn>
+				<en>Tejarat</en>
+			</Opt>
+			<Opt>
+				<bin>603769</bin>
+				<fn>بانک صادرات ایران</fn>
+				<en>Saderat</en>
+			</Opt>
+			<Opt>
+				<bin>627648</bin>
+				<fn>بانک توسعه صادرات ایران</fn>
+				<en>Tose Saderat</en>
+			</Opt>
+			<Opt>
+				<bin>502908</bin>
+				<fn>بانک توسعه تعاون</fn>
+				<en>Tose Tavoon</en>
+			</Opt>
+			<Opt>
+				<bin>628157</bin>
+				<fn>موسسه اعتباری توسعه</fn>
+				<en>ET Tose</en>
+			</Opt>
+			<Opt>
+				<bin>639599</bin>
+				<fn>بانک قوامین</fn>
+				<en>Ghavamin</en>
+			</Opt>
+			<Opt>
+				<bin>627488</bin>
+				<fn>بانک  کارآفرین</fn>
+				<en>Karafarin</en>
+			</Opt>
+			<Opt>
+				<bin>622106</bin>
+				<fn>بانک پارسیان</fn>
+				<en>Parsian</en>
+			</Opt>
+			<Opt>
+				<bin>627412</bin>
+				<fn>بانک اقتصاد نوین</fn>
+				<en>EN bank</en>
+			</Opt>
+			<Opt>
+				<bin>621986</bin>
+				<fn>بانک سامان</fn>
+				<en>Saman</en>
+			</Opt>
+			<Opt>
+				<bin>502229</bin>
+				<fn>بانک پاسارگارد</fn>
+				<en>Pasargad</en>
+			</Opt>
+			<Opt>
+				<bin>627760</bin>
+				<fn>پست بانک</fn>
+				<en>Post Bank</en>
+			</Opt>
+			<Opt>
+				<bin>639607</bin>
+				<fn>بانک سرمایه</fn>
+				<en>Sarmayeh</en>
+			</Opt>
+			<Opt>
+				<bin>639346</bin>
+				<fn>بانک سینا</fn>
+				<en>Sina</en>
+			</Opt>
+			<Opt>
+				<bin>606373</bin>
+				<fn>بانک قرض الحسنه مهر ایران</fn>
+				<en>Gh Mehr</en>
+			</Opt>
+			<Opt>
+				<bin>504706</bin>
+				<fn>بانک شهر</fn>
+				<en>City</en>
+			</Opt>
+			<Opt>
+				<bin>636214</bin>
+				<fn>بانک آینده</fn>
+				<en>Future Bank</en>
+			</Opt>
+			<Opt>
+				<bin>627381</bin>
+				<fn>بانک انصار</fn>
+				<en>Ansar</en>
+			</Opt>
+			<Opt>
+				<bin>505416</bin>
+				<fn>بانک گرد شگری</fn>
+				<en>Tourism</en>
+			</Opt>
+			<Opt>
+				<bin>636949</bin>
+				<fn>حکمت ایرانیان</fn>
+				<en>Hekmat</en>
+			</Opt>
+			<Opt>
+				<bin>502938</bin>
+				<fn>بانک دی</fn>
+				<en>Dey</en>
+			</Opt>
+			<Opt>
+				<bin>505785</bin>
+				<fn>بانک ایران زمین</fn>
+				<en>Iran Zamin</en>
+			</Opt>
+			<Opt>
+				<bin>504172</bin>
+				<fn>بانک قرض الحسنه رسالت</fn>
+				<en>Gh Resalat</en>
+			</Opt>
+			<Opt>
+				<bin>505801</bin>
+				<fn>موسسه مالي و اعتباري کوثر</fn>
+				<en>Kosar</en>
+			</Opt>
+			<Opt>
+				<bin>606256</bin>
+				<fn>موسسه مالی و اعتباری عسکریه</fn>
+				<en>Askari</en>
+			</Opt>
+			<Opt>
+				<bin>505809</bin>
+				<fn>بانک خاورمیانه</fn>
+				<en>Midle East</en>
+			</Opt>
+			<Opt>
+				<bin>585947</bin>
+				<fn>بانک خاورمیانه سوئیچ دوم</fn>
+				<en>Midle East</en>
+			</Opt>
+			<Opt>
+				<bin>581672</bin>
+				<fn>شبکه الکترونیکی پرداخت کارت - شاپرک</fn>
+				<en>Shaparak</en>
+			</Opt>
+		</Bank>
+		<Cpcode>
+			<Opt>
+				<pcode>xxxxxx62</pcode>
+				<fn></fn>
+				<en>Credit Card</en>			
+			</Opt>
+			<Opt>
+				<pcode>xxxxxx63</pcode>
+				<fn></fn>
+				<en>Credit Card</en>			
+			</Opt>
+			<Opt>
+				<pcode>xxxxxx64</pcode>
+				<fn></fn>
+				<en>Credit Card</en>			
+			</Opt>
+			<Opt>
+				<pcode>xxxxxxxx</pcode>
+				<fn></fn>
+				<en>Debit Card</en>			
+			</Opt>
+		</Cpcode>
+	</Trs>
+	<Cg>
+		<max>4</max>
+		<Pvs>
+			<Pv>
+				<id>919</id>
+				<en>MCI</en>
+				<fn>همراه اول</fn>
+				<supp>02164004</supp>
+				<load>*140*#pin#</load>
+				<voucher>
+					<idx>0</idx>
+					<cid>1</cid>
+					<amount>10000</amount>
+				</voucher>	
+				<voucher>
+					<idx>1</idx>
+					<cid>2</cid>
+					<amount>20000</amount>
+				</voucher>	
+				<voucher>
+					<idx>2</idx>
+					<cid>3</cid>
+					<amount>50000</amount>
+				</voucher>	
+				<voucher>
+					<idx>3</idx>
+					<cid>4</cid>
+					<amount>100000</amount>
+				</voucher>
+				<voucher>
+					<idx>4</idx>
+					<cid>5</cid>
+					<amount>200000</amount>
+				</voucher>
+			</Pv>
+			<Pv>
+				<id>935</id>
+				<en>Irancell</en>
+				<fn>ایرانسل</fn>
+				<supp>02164004</supp>
+				<load>*141*pin#</load>
+				<voucher>
+					<idx>0</idx>
+					<cid>1</cid>
+					<amount>10000</amount>
+				</voucher>
+				<voucher>
+					<idx>1</idx>
+					<cid>2</cid>
+					<amount>20000</amount>
+				</voucher>
+				<voucher>
+					<idx>2</idx>
+					<cid>3</cid>
+					<amount>50000</amount>
+				</voucher>
+				<voucher>
+					<idx>3</idx>
+					<cid>4</cid>
+					<amount>100000</amount>
+				</voucher>
+				<voucher>
+					<idx>4</idx>
+					<cid>5</cid>
+					<amount>200000</amount>
+				</voucher>
+			</Pv>
+			<Pv>
+				<id>932</id>
+				<en>Talia</en>
+				<fn>تالیا</fn>
+				<supp>02164004</supp>
+				<load>*140*pin#</load>
+				<voucher>
+					<idx>0</idx>
+					<cid>2</cid>
+					<amount>20000</amount>
+				</voucher>
+				<voucher>
+					<idx>1</idx>
+					<cid>3</cid>
+					<amount>50000</amount>
+				</voucher>
+				<voucher>
+					<idx>2</idx>
+					<cid>4</cid>
+					<amount>100000</amount>
+				</voucher>
+				<voucher>
+					<idx>3</idx>
+					<cid>5</cid>
+					<amount>200000</amount>
+				</voucher>
+				<voucher>
+					<idx>4</idx>
+					<cid>6</cid>
+					<amount>500000</amount>
+				</voucher>
+			</Pv>
+			<Pv>
+				<id>921</id>
+				<en>Rightel</en>
+				<fn>رایتل</fn>
+				<supp>02164004</supp>
+				<load></load>
+				<voucher>
+					<idx>0</idx>
+					<cid>7</cid>
+					<amount>20800</amount>
+				</voucher>
+				<voucher>
+					<idx>1</idx>
+					<cid>8</cid>
+					<amount>52000</amount>
+				</voucher>
+				<voucher>
+					<idx>2</idx>
+					<cid>9</cid>
+					<amount>104000</amount>
+				</voucher>
+			</Pv>
+		</Pvs>
+	</Cg>
+</PaymentConfig>

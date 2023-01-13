@@ -1,0 +1,758 @@
+// PNGResources.cpp
+
+#include "StdAfx.h"
+#include "SADADPay.h"
+
+#if defined(MODEL_CT360)
+RES_PNG RP_HEADER				= { IDB_DUMMY, 320, 40, { 0, 24 }, { 0, 24 } };
+RES_PNG	RP_HEADER_LINE			= { IDB_HEADER_LINE, 300, 1, { 10, 65 }, { 10, 65 } };
+RES_PNG	RP_HEADER_DESC			= { IDB_DUMMY, 320, 32, { 0, 66 }, { 0, 66 } };
+RES_PNG	RP_MESSAGE				= { IDB_DUMMY, 320, 174, { 0, 66 }, { 0, 66 } };
+
+RES_PNG	RP_INPUT_W_DESC			= { IDB_DUMMY, 320, 95, { 0, 98 }, { 0, 98 } };
+RES_PNG	RP_INPUT_WO_DESC		= { IDB_DUMMY, 320, 127, { 0, 66 }, { 0, 66 } };
+
+RES_PNG	RP_YES_BTN				= { IDB_YES_BTN, 160, 47, { 160, 193 }, { 160, 193 } };
+RES_PNG	RP_NO_BTN				= { IDB_NO_BTN, 160, 47, { 0, 193 }, { 0, 193 } };
+RES_PNG	RP_YES_BTN_PRESS		= { IDB_YES_BTN, 160, 47, { 160, 193 }, { 160, 193 } };
+RES_PNG	RP_NO_BTN_PRESS			= { IDB_NO_BTN, 160, 47, { 0, 193 }, { 0, 193 } };
+RES_PNG	RP_YES_BTN_PAD			= { IDB_YES_BTN, 160, 47, { 160, 193 }, { 160, 193 } };
+RES_PNG	RP_NO_BTN_PAD			= { IDB_NO_BTN, 160, 47, { 0, 193 }, { 0, 193 } };
+RES_PNG	RP_YES_BTN_PAD_PRESS	= { IDB_YES_BTN, 160, 47, { 160, 193 }, { 160, 193 } };
+RES_PNG	RP_NO_BTN_PAD_PRESS		= { IDB_NO_BTN, 160, 47, { 0, 193 }, { 0, 193 } };
+
+RES_PNG	RP_ANNUNCIATOR			= { IDB_DUMMY, 320, 24, { 0, 0 }, { 0, 0 } };
+RES_PNG	RP_ANN_CONN[MAX_CONN_STATUS]	=
+{
+	{ IDB_CONN_0, 20, 20, { 8, 2 }, { 8, 2 } },
+	{ IDB_CONN_1, 20, 20, { 8, 2 }, { 8, 2 } },
+	{ IDB_CONN_2, 20, 20, { 8, 2 }, { 8, 2 } },
+	{ IDB_CONN_3, 20, 20, { 8, 2 }, { 8, 2 } },
+	{ IDB_CONN_4, 20, 20, { 8, 2 }, { 8, 2 } },
+	{ IDB_CONN_5, 20, 20, { 8, 2 }, { 8, 2 } }
+};
+RES_PNG	RP_ANN_COUNT			= { IDB_DUMMY, 20, 20, { 36, 2 }, { 36, 2 } };
+RES_PNG	RP_ANN_BATT[MAX_BATT_STATUS]	=
+{
+	{ IDB_BATT_0, 20, 20, { 246, 2 }, { 246, 2 } },
+	{ IDB_BATT_1, 20, 20, { 246, 2 }, { 246, 2 } },
+	{ IDB_BATT_2, 20, 20, { 246, 2 }, { 246, 2 } },
+	{ IDB_BATT_3, 20, 20, { 246, 2 }, { 246, 2 } },
+	{ IDB_BATT_4, 20, 20, { 246, 2 }, { 246, 2 } },
+	{ IDB_BATT_5, 20, 20, { 246, 2 }, { 246, 2 } },
+	{ IDB_BATT_6, 20, 20, { 246, 2 }, { 246, 2 } },
+	{ IDB_BATT_7, 20, 20, { 246, 2 }, { 246, 2 } },
+	{ IDB_BATT_8, 20, 20, { 246, 2 }, { 246, 2 } }
+};
+RES_PNG	RP_ANN_TIME				= { IDB_DUMMY, 50, 24, { 270, 0 }, { 270, 0 } };
+
+RES_PNG	RP_MENU_BOTTOM_LINE		= { IDB_DUMMY, 320, 15, { 0, 225 }, { 0, 225 } };
+
+RES_PNG	RP_MENU_UNSELECTED[MENU_ITEMS_PER_PAGE]	=
+{
+	{ IDB_MENU_UNSELECTED, 320, 49, { 0, 25 }, { 0, 25 } },
+	{ IDB_MENU_UNSELECTED, 320, 49, { 0, 75 }, { 0, 75 } },
+	{ IDB_MENU_UNSELECTED, 320, 49, { 0, 125 }, { 0, 125 } },
+	{ IDB_MENU_UNSELECTED, 320, 49, { 0, 175 }, { 0, 175 } }
+};
+RES_PNG	RP_MENU_SELECTED[MENU_ITEMS_PER_PAGE]	=
+{
+	{ IDB_MENU_SELECTED, 320, 49, { 0, 25 }, { 0, 25 } },
+	{ IDB_MENU_SELECTED, 320, 49, { 0, 75 }, { 0, 75 } },
+	{ IDB_MENU_SELECTED, 320, 49, { 0, 125 }, { 0, 125 } },
+	{ IDB_MENU_SELECTED, 320, 49, { 0, 175 }, { 0, 175 } }
+};
+RES_PNG	RP_MENU_CHECKED[MENU_ITEMS_PER_PAGE]	=
+{
+	{ IDB_MENU_CHECKED, 320, 49, { 0, 25 }, { 0, 25 } },
+	{ IDB_MENU_CHECKED, 320, 49, { 0, 75 }, { 0, 75 } },
+	{ IDB_MENU_CHECKED, 320, 49, { 0, 125 }, { 0, 125 } },
+	{ IDB_MENU_CHECKED, 320, 49, { 0, 175 }, { 0, 175 } }
+};
+
+RES_PNG	RP_MENU_UP_UNSELECTED	= { IDB_MENU_UP_UNSELECTED, 320, 49, { 0, 25 }, { 0, 25 } };
+RES_PNG	RP_MENU_UP_SELECTED		= { IDB_MENU_UP_SELECTED, 320, 49, { 0, 25 }, { 0, 25 } };
+RES_PNG	RP_MENU_DN_UNSELECTED	= { IDB_MENU_DN_UNSELECTED, 320, 49, { 0, 175 }, { 0, 175 } };
+RES_PNG	RP_MENU_DN_SELECTED		= { IDB_MENU_DN_SELECTED, 320, 49, { 0, 175 }, { 0, 175 } };
+
+RES_PNG	RP_SWIPE				= { IDB_SWIPE, 168, 100, { 76, 82 }, { 76, 82 } };
+RES_PNG	RP_WAIT					= { IDB_WAIT, 100, 100, { 110, 82 }, { 110, 82 } };
+RES_PNG	RP_BOTTOM				= { IDB_BOTTOM, 320, 40, { 0, 200 }, { 0, 200 } };
+
+RES_PNG	RP_PASSWORD_BOX			= { IDB_PASSWORD_BOX, 284, 48, { 18, 105 }, { 18, 105 } };
+RES_PNG	RP_PASSWORD_ASTERISK[LENGTH_PASSWORD]	=
+{
+	{ IDB_PASSWORD_ASTERISK, 30, 46, { 19, 106 }, { 19, 106 } },
+	{ IDB_PASSWORD_ASTERISK, 30, 46, { 55, 106 }, { 55, 106 } },
+	{ IDB_PASSWORD_ASTERISK, 30, 46, { 91, 106 }, { 91, 106 } },
+	{ IDB_PASSWORD_ASTERISK, 30, 46, { 127, 106 }, { 127, 106 } },
+	{ IDB_PASSWORD_ASTERISK, 30, 46, { 163, 106 }, { 163, 106 } },
+	{ IDB_PASSWORD_ASTERISK, 30, 46, { 199, 106 }, { 199, 106 } },
+	{ IDB_PASSWORD_ASTERISK, 30, 46, { 235, 106 }, { 235, 106 } },
+	{ IDB_PASSWORD_ASTERISK, 30, 46, { 271, 106 }, { 271, 106 } }
+};
+
+RES_PNG	RP_PIN_BOX				= { IDB_PIN_BOX, 210, 64, { 55, 113 }, { 55, 113 } };
+RES_PNG	RP_PIN_ASTERISK[LENGTH_PIN]	=
+{
+	{ IDB_PIN_ASTERISK, 46, 62, { 56, 114 }, { 56, 114 } },
+	{ IDB_PIN_ASTERISK, 46, 62, { 110, 114 }, { 110, 114 } },
+	{ IDB_PIN_ASTERISK, 46, 62, { 164, 114 }, { 164, 114 } },
+	{ IDB_PIN_ASTERISK, 46, 62, { 218, 114 }, { 218, 114 } }
+};
+
+RES_PNG	RP_RESULT				= { IDB_DUMMY, 320, 120, { 0, 120 }, { 0, 120 } };
+RES_PNG	RP_RESULT_TEXT			= { IDB_DUMMY, 224, 100, { 32, 140 }, { 64, 140 } };
+RES_PNG	RP_SUCCESSFUL			= { IDB_SUCCESSFUL, 64, 64, { 16, 52 }, { 240, 52 } };
+RES_PNG	RP_UNSUCCESSFUL			= { IDB_UNSUCCESSFUL, 64, 64, { 16, 52 }, { 240, 52 } };
+
+RES_PNG	RP_PRINT				= { IDB_PRINT, 106, 90, { 107, 84 }, { 107, 84 } };
+RES_PNG	RP_PRINT_MESSAGE		= { IDB_DUMMY, 320, 47, { 0, 193 }, { 0, 193 } };
+
+RES_PNG	RP_TRACE_NO_BOX			= { IDB_NUMBER_BOX, 212, 48, { 54, 105 }, { 54, 105 } };
+RES_PNG	RP_TRACE_NO_NUMBER[LENGTH_TRACENO]	=
+{
+	{ IDB_DUMMY, 30, 46, { 55, 106 }, { 55, 106 } },
+	{ IDB_DUMMY, 30, 46, { 91, 106 }, { 91, 106 } },
+	{ IDB_DUMMY, 30, 46, { 127, 106 }, { 127, 106 } },
+	{ IDB_DUMMY, 30, 46, { 163, 106 }, { 163, 106 } },
+	{ IDB_DUMMY, 30, 46, { 199, 106 }, { 199, 106 } },
+	{ IDB_DUMMY, 30, 46, { 235, 106 }, { 235, 106 } }
+};
+
+RES_PNG	RP_CITY_CODE_BOX		= { IDB_PIN_BOX, 210, 64, { 55, 97 }, { 55, 97 } };
+RES_PNG	RP_CITY_CODE_NUMBER[LENGTH_CITY_CODE]	=
+{
+	{ IDB_DUMMY, 46, 62, { 56, 98 }, { 56, 98 } },
+	{ IDB_DUMMY, 46, 62, { 110, 98 }, { 110, 98 } },
+	{ IDB_DUMMY, 46, 62, { 164, 98 }, { 164, 98 } },
+	{ IDB_DUMMY, 46, 62, { 218, 98 }, { 218, 98 } }
+};
+
+RES_PNG	RP_PHONE_BOX			= { IDB_PHONE_BOX, 310, 32, { 5, 113 }, { 5, 113 } };
+RES_PNG	RP_PHONE_NUMBER[LENGTH_PHONE_BOX]	=
+{
+	{ IDB_DUMMY, 22, 30, { 6, 114 }, { 6, 114 } },
+	{ IDB_DUMMY, 22, 30, { 32, 114 }, { 32, 114 } },
+	{ IDB_DUMMY, 22, 30, { 58, 114 }, { 58, 114 } },
+	{ IDB_DUMMY, 22, 30, { 84, 114 }, { 84, 114 } },
+	{ IDB_DUMMY, 22, 30, { 110, 114 }, { 110, 114 } },
+	{ IDB_DUMMY, 22, 30, { 136, 114 }, { 136, 114 } },
+	{ IDB_DUMMY, 22, 30, { 162, 114 }, { 162, 114 } },
+	{ IDB_DUMMY, 22, 30, { 188, 114 }, { 188, 114 } },
+	{ IDB_DUMMY, 22, 30, { 214, 114 }, { 214, 114 } },
+	{ IDB_DUMMY, 22, 30, { 240, 114 }, { 240, 114 } },
+	{ IDB_DUMMY, 22, 30, { 266, 114 }, { 266, 114 } },
+	{ IDB_DUMMY, 22, 30, { 292, 114 }, { 292, 114 } }
+};
+
+RES_PNG	RP_DATE_BOX				= { IDB_PASSWORD_BOX, 284, 48, { 18, 105 }, { 18, 105 } };
+RES_PNG	RP_DATE_NUMBER[LENGTH_DATE]	=
+{
+	{ IDB_DUMMY, 30, 46, { 19, 106 }, { 19, 106 } },
+	{ IDB_DUMMY, 30, 46, { 55, 106 }, { 55, 106 } },
+	{ IDB_DUMMY, 30, 46, { 91, 106 }, { 91, 106 } },
+	{ IDB_DUMMY, 30, 46, { 127, 106 }, { 127, 106 } },
+	{ IDB_DUMMY, 30, 46, { 163, 106 }, { 163, 106 } },
+	{ IDB_DUMMY, 30, 46, { 199, 106 }, { 199, 106 } },
+	{ IDB_DUMMY, 30, 46, { 235, 106 }, { 235, 106 } },
+	{ IDB_DUMMY, 30, 46, { 271, 106 }, { 271, 106 } }
+};
+
+RES_PNG	RP_TIME_BOX				= { IDB_PIN_BOX, 210, 64, { 55, 97 }, { 55, 97 } };
+RES_PNG	RP_TIME_NUMBER[LENGTH_TIME]	=
+{
+	{ IDB_DUMMY, 46, 62, { 56, 98 }, { 56, 98 } },
+	{ IDB_DUMMY, 46, 62, { 110, 98 }, { 110, 98 } },
+	{ IDB_DUMMY, 46, 62, { 164, 98 }, { 164, 98 } },
+	{ IDB_DUMMY, 46, 62, { 218, 98 }, { 218, 98 } }
+};
+
+RES_PNG	RP_BRIGHTNESS_BOX		= { IDB_PASSWORD_BOX, 284, 48, { 18, 105 }, { 18, 105 } };
+RES_PNG	RP_BRIGHTNESS_FILL[MAX_BRIGHTNESS]	=
+{
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 19, 106 }, { 19, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 55, 106 }, { 55, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 91, 106 }, { 91, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 127, 106 }, { 127, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 163, 106 }, { 163, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 199, 106 }, { 199, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 235, 106 }, { 235, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 271, 106 }, { 271, 106 } }
+};
+
+RES_PNG	RP_SETTINGS_BOX			= { IDB_SETTINGS_BOX, 156, 64, { 82, 97 }, { 82, 97 } };
+RES_PNG	RP_SETTINGS_NUMBER[LENGTH_SETTINGS_BOX]	=
+{
+	{ IDB_DUMMY, 46, 62, { 83, 98 }, { 83, 98 } },
+	{ IDB_DUMMY, 46, 62, { 137, 98 }, { 137, 98 } },
+	{ IDB_DUMMY, 46, 62, { 191, 98 }, { 191, 98 } }
+};
+
+RES_PNG	RP_WEEKDAYS_BOX			= { IDB_WEEKDAYS_BOX, 248, 48, { 36, 105 }, { 36, 105 } };
+RES_PNG	RP_WEEKDAYS_FILL[MAX_WEEKDAYS]	=
+{
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 37, 106 }, { 37, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 73, 106 }, { 73, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 109, 106 }, { 109, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 145, 106 }, { 145, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 181, 106 }, { 181, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 217, 106 }, { 217, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 253, 106 }, { 253, 106 } }
+};
+
+RES_PNG	RP_IPADDRESS_BOX		= { IDB_IPADDRESS_BOX, 310, 32, { 5, 113 }, { 5, 113 } };
+RES_PNG	RP_IPADDRESS_NUMBER[LENGTH_IPADDRESS]	=
+{
+	{ IDB_DUMMY, 22, 30, { 6, 114 }, { 6, 114 } },
+	{ IDB_DUMMY, 22, 30, { 32, 114 }, { 32, 114 } },
+	{ IDB_DUMMY, 22, 30, { 58, 114 }, { 58, 114 } },
+	{ IDB_DUMMY, 22, 30, { 84, 114 }, { 84, 114 } },
+	{ IDB_DUMMY, 22, 30, { 110, 114 }, { 110, 114 } },
+	{ IDB_DUMMY, 22, 30, { 136, 114 }, { 136, 114 } },
+	{ IDB_DUMMY, 22, 30, { 162, 114 }, { 162, 114 } },
+	{ IDB_DUMMY, 22, 30, { 188, 114 }, { 188, 114 } },
+	{ IDB_DUMMY, 22, 30, { 214, 114 }, { 214, 114 } },
+	{ IDB_DUMMY, 22, 30, { 240, 114 }, { 240, 114 } },
+	{ IDB_DUMMY, 22, 30, { 266, 114 }, { 266, 114 } },
+	{ IDB_DUMMY, 22, 30, { 292, 114 }, { 292, 114 } }
+};
+RES_PNG	RP_PORT_BOX				= { IDB_NUMBER_BOX, 212, 48, { 54, 105 }, { 54, 105 } };
+RES_PNG	RP_PORT_NUMBER[LENGTH_PORT]	=
+{
+	{ IDB_DUMMY, 30, 46, { 55, 106 }, { 55, 106 } },
+	{ IDB_DUMMY, 30, 46, { 91, 106 }, { 91, 106 } },
+	{ IDB_DUMMY, 30, 46, { 127, 106 }, { 127, 106 } },
+	{ IDB_DUMMY, 30, 46, { 163, 106 }, { 163, 106 } },
+	{ IDB_DUMMY, 30, 46, { 199, 106 }, { 199, 106 } },
+	{ IDB_DUMMY, 30, 46, { 235, 106 }, { 235, 106 } }
+};
+
+RES_PNG	RP_INTRO_TOP			= { IDB_DUMMY, 320, 40, { 0, 24 }, { 0, 24 } };
+#elif defined(MODEL_MT360)
+RES_PNG RP_HEADER				= { IDB_DUMMY, 320, 40, { 0, 24 }, { 0, 24 } };
+RES_PNG	RP_HEADER_LINE			= { IDB_HEADER_LINE, 300, 1, { 10, 65 }, { 10, 65 } };
+RES_PNG	RP_HEADER_DESC			= { IDB_DUMMY, 320, 32, { 0, 66 }, { 0, 66 } };
+RES_PNG	RP_MESSAGE				= { IDB_DUMMY, 320, 174, { 0, 66 }, { 0, 66 } };
+
+RES_PNG	RP_INPUT_W_DESC			= { IDB_DUMMY, 320, 95, { 0, 98 }, { 0, 98 } };
+RES_PNG	RP_INPUT_WO_DESC		= { IDB_DUMMY, 320, 127, { 0, 66 }, { 0, 66 } };
+
+RES_PNG	RP_YES_BTN				= { IDB_YES_BTN, 160, 47, { 160, 193 }, { 160, 193 } };
+RES_PNG	RP_NO_BTN				= { IDB_NO_BTN, 160, 47, { 0, 193 }, { 0, 193 } };
+RES_PNG	RP_YES_BTN_PRESS		= { IDB_YES_BTN, 160, 47, { 160, 193 }, { 160, 193 } };
+RES_PNG	RP_NO_BTN_PRESS			= { IDB_NO_BTN, 160, 47, { 0, 193 }, { 0, 193 } };
+RES_PNG	RP_YES_BTN_PAD			= { IDB_YES_BTN, 160, 47, { 160, 193 }, { 160, 193 } };
+RES_PNG	RP_NO_BTN_PAD			= { IDB_NO_BTN, 160, 47, { 0, 193 }, { 0, 193 } };
+RES_PNG	RP_YES_BTN_PAD_PRESS	= { IDB_YES_BTN, 160, 47, { 160, 193 }, { 160, 193 } };
+RES_PNG	RP_NO_BTN_PAD_PRESS		= { IDB_NO_BTN, 160, 47, { 0, 193 }, { 0, 193 } };
+
+RES_PNG	RP_ANNUNCIATOR			= { IDB_DUMMY, 320, 24, { 0, 0 }, { 0, 0 } };
+RES_PNG	RP_ANN_CONN[MAX_CONN_STATUS]	=
+{
+	{ IDB_CONN_0, 20, 20, { 32, 2 }, { 32, 2 } },
+	{ IDB_CONN_1, 20, 20, { 32, 2 }, { 32, 2 } },
+	{ IDB_CONN_2, 20, 20, { 32, 2 }, { 32, 2 } },
+	{ IDB_CONN_3, 20, 20, { 32, 2 }, { 32, 2 } },
+	{ IDB_CONN_4, 20, 20, { 32, 2 }, { 32, 2 } },
+	{ IDB_CONN_5, 20, 20, { 32, 2 }, { 32, 2 } }
+};
+RES_PNG	RP_ANN_COUNT			= { IDB_DUMMY, 20, 20, { 60, 2 }, { 60, 2 } };
+RES_PNG	RP_ANN_BATT[MAX_BATT_STATUS]	=
+{
+	{ IDB_BATT_0, 20, 20, { 246, 2 }, { 246, 2 } },
+	{ IDB_BATT_1, 20, 20, { 246, 2 }, { 246, 2 } },
+	{ IDB_BATT_2, 20, 20, { 246, 2 }, { 246, 2 } },
+	{ IDB_BATT_3, 20, 20, { 246, 2 }, { 246, 2 } },
+	{ IDB_BATT_4, 20, 20, { 246, 2 }, { 246, 2 } },
+	{ IDB_BATT_5, 20, 20, { 246, 2 }, { 246, 2 } },
+	{ IDB_BATT_6, 20, 20, { 246, 2 }, { 246, 2 } },
+	{ IDB_BATT_7, 20, 20, { 246, 2 }, { 246, 2 } },
+	{ IDB_BATT_8, 20, 20, { 246, 2 }, { 246, 2 } }
+};
+RES_PNG	RP_ANN_TIME				= { IDB_DUMMY, 50, 24, { 270, 0 }, { 270, 0 } };
+
+RES_PNG	RP_MENU_BOTTOM_LINE		= { IDB_DUMMY, 320, 15, { 0, 225 }, { 0, 225 } };
+
+RES_PNG	RP_MENU_UNSELECTED[MENU_ITEMS_PER_PAGE]	=
+{
+	{ IDB_MENU_UNSELECTED, 320, 49, { 0, 25 }, { 0, 25 } },
+	{ IDB_MENU_UNSELECTED, 320, 49, { 0, 75 }, { 0, 75 } },
+	{ IDB_MENU_UNSELECTED, 320, 49, { 0, 125 }, { 0, 125 } },
+	{ IDB_MENU_UNSELECTED, 320, 49, { 0, 175 }, { 0, 175 } }
+};
+RES_PNG	RP_MENU_SELECTED[MENU_ITEMS_PER_PAGE]	=
+{
+	{ IDB_MENU_SELECTED, 320, 49, { 0, 25 }, { 0, 25 } },
+	{ IDB_MENU_SELECTED, 320, 49, { 0, 75 }, { 0, 75 } },
+	{ IDB_MENU_SELECTED, 320, 49, { 0, 125 }, { 0, 125 } },
+	{ IDB_MENU_SELECTED, 320, 49, { 0, 175 }, { 0, 175 } }
+};
+RES_PNG	RP_MENU_CHECKED[MENU_ITEMS_PER_PAGE]	=
+{
+	{ IDB_MENU_CHECKED, 320, 49, { 0, 25 }, { 0, 25 } },
+	{ IDB_MENU_CHECKED, 320, 49, { 0, 75 }, { 0, 75 } },
+	{ IDB_MENU_CHECKED, 320, 49, { 0, 125 }, { 0, 125 } },
+	{ IDB_MENU_CHECKED, 320, 49, { 0, 175 }, { 0, 175 } }
+};
+
+RES_PNG	RP_MENU_UP_UNSELECTED	= { IDB_MENU_UP_UNSELECTED, 320, 49, { 0, 25 }, { 0, 25 } };
+RES_PNG	RP_MENU_UP_SELECTED		= { IDB_MENU_UP_SELECTED, 320, 49, { 0, 25 }, { 0, 25 } };
+RES_PNG	RP_MENU_DN_UNSELECTED	= { IDB_MENU_DN_UNSELECTED, 320, 49, { 0, 175 }, { 0, 175 } };
+RES_PNG	RP_MENU_DN_SELECTED		= { IDB_MENU_DN_SELECTED, 320, 49, { 0, 175 }, { 0, 175 } };
+
+RES_PNG	RP_SWIPE				= { IDB_SWIPE, 168, 100, { 76, 82 }, { 76, 82 } };
+RES_PNG	RP_WAIT					= { IDB_WAIT, 100, 100, { 110, 82 }, { 110, 82 } };
+RES_PNG	RP_BOTTOM				= { IDB_BOTTOM, 320, 40, { 0, 200 }, { 0, 200 } };
+
+RES_PNG	RP_PASSWORD_BOX			= { IDB_PASSWORD_BOX, 284, 48, { 18, 105 }, { 18, 105 } };
+RES_PNG	RP_PASSWORD_ASTERISK[LENGTH_PASSWORD]	=
+{
+	{ IDB_PASSWORD_ASTERISK, 30, 46, { 19, 106 }, { 19, 106 } },
+	{ IDB_PASSWORD_ASTERISK, 30, 46, { 55, 106 }, { 55, 106 } },
+	{ IDB_PASSWORD_ASTERISK, 30, 46, { 91, 106 }, { 91, 106 } },
+	{ IDB_PASSWORD_ASTERISK, 30, 46, { 127, 106 }, { 127, 106 } },
+	{ IDB_PASSWORD_ASTERISK, 30, 46, { 163, 106 }, { 163, 106 } },
+	{ IDB_PASSWORD_ASTERISK, 30, 46, { 199, 106 }, { 199, 106 } },
+	{ IDB_PASSWORD_ASTERISK, 30, 46, { 235, 106 }, { 235, 106 } },
+	{ IDB_PASSWORD_ASTERISK, 30, 46, { 271, 106 }, { 271, 106 } }
+};
+
+RES_PNG	RP_PIN_BOX				= { IDB_PIN_BOX, 210, 64, { 55, 97 }, { 55, 97 } };
+RES_PNG	RP_PIN_ASTERISK[LENGTH_PIN]	=
+{
+	{ IDB_PIN_ASTERISK, 46, 62, { 56, 98 }, { 56, 98 } },
+	{ IDB_PIN_ASTERISK, 46, 62, { 110, 98 }, { 110, 98 } },
+	{ IDB_PIN_ASTERISK, 46, 62, { 164, 98 }, { 164, 98 } },
+	{ IDB_PIN_ASTERISK, 46, 62, { 218, 98 }, { 218, 98 } }
+};
+
+RES_PNG	RP_RESULT				= { IDB_DUMMY, 320, 120, { 0, 120 }, { 0, 120 } };
+RES_PNG	RP_RESULT_TEXT			= { IDB_DUMMY, 224, 100, { 32, 140 }, { 64, 140 } };
+RES_PNG	RP_SUCCESSFUL			= { IDB_SUCCESSFUL, 64, 64, { 16, 52 }, { 240, 52 } };
+RES_PNG	RP_UNSUCCESSFUL			= { IDB_UNSUCCESSFUL, 64, 64, { 16, 52 }, { 240, 52 } };
+
+RES_PNG	RP_PRINT				= { IDB_PRINT, 106, 90, { 107, 84 }, { 107, 84 } };
+RES_PNG	RP_PRINT_MESSAGE		= { IDB_DUMMY, 320, 47, { 0, 193 }, { 0, 193 } };
+
+RES_PNG	RP_TRACE_NO_BOX			= { IDB_NUMBER_BOX, 212, 48, { 54, 105 }, { 54, 105 } };
+RES_PNG	RP_TRACE_NO_NUMBER[LENGTH_TRACENO]	=
+{
+	{ IDB_DUMMY, 30, 46, { 55, 106 }, { 55, 106 } },
+	{ IDB_DUMMY, 30, 46, { 91, 106 }, { 91, 106 } },
+	{ IDB_DUMMY, 30, 46, { 127, 106 }, { 127, 106 } },
+	{ IDB_DUMMY, 30, 46, { 163, 106 }, { 163, 106 } },
+	{ IDB_DUMMY, 30, 46, { 199, 106 }, { 199, 106 } },
+	{ IDB_DUMMY, 30, 46, { 235, 106 }, { 235, 106 } }
+};
+
+RES_PNG	RP_CITY_CODE_BOX		= { IDB_PIN_BOX, 210, 64, { 55, 97 }, { 55, 97 } };
+RES_PNG	RP_CITY_CODE_NUMBER[LENGTH_CITY_CODE]	=
+{
+	{ IDB_DUMMY, 46, 62, { 56, 98 }, { 56, 98 } },
+	{ IDB_DUMMY, 46, 62, { 110, 98 }, { 110, 98 } },
+	{ IDB_DUMMY, 46, 62, { 164, 98 }, { 164, 98 } },
+	{ IDB_DUMMY, 46, 62, { 218, 98 }, { 218, 98 } }
+};
+
+RES_PNG	RP_PHONE_BOX			= { IDB_PHONE_BOX, 310, 32, { 5, 113 }, { 5, 113 } };
+RES_PNG	RP_PHONE_NUMBER[LENGTH_PHONE_BOX]	=
+{
+	{ IDB_DUMMY, 22, 30, { 6, 114 }, { 6, 114 } },
+	{ IDB_DUMMY, 22, 30, { 32, 114 }, { 32, 114 } },
+	{ IDB_DUMMY, 22, 30, { 58, 114 }, { 58, 114 } },
+	{ IDB_DUMMY, 22, 30, { 84, 114 }, { 84, 114 } },
+	{ IDB_DUMMY, 22, 30, { 110, 114 }, { 110, 114 } },
+	{ IDB_DUMMY, 22, 30, { 136, 114 }, { 136, 114 } },
+	{ IDB_DUMMY, 22, 30, { 162, 114 }, { 162, 114 } },
+	{ IDB_DUMMY, 22, 30, { 188, 114 }, { 188, 114 } },
+	{ IDB_DUMMY, 22, 30, { 214, 114 }, { 214, 114 } },
+	{ IDB_DUMMY, 22, 30, { 240, 114 }, { 240, 114 } },
+	{ IDB_DUMMY, 22, 30, { 266, 114 }, { 266, 114 } },
+	{ IDB_DUMMY, 22, 30, { 292, 114 }, { 292, 114 } }
+};
+
+RES_PNG	RP_DATE_BOX				= { IDB_PASSWORD_BOX, 284, 48, { 18, 105 }, { 18, 105 } };
+RES_PNG	RP_DATE_NUMBER[LENGTH_DATE]	=
+{
+	{ IDB_DUMMY, 30, 46, { 19, 106 }, { 19, 106 } },
+	{ IDB_DUMMY, 30, 46, { 55, 106 }, { 55, 106 } },
+	{ IDB_DUMMY, 30, 46, { 91, 106 }, { 91, 106 } },
+	{ IDB_DUMMY, 30, 46, { 127, 106 }, { 127, 106 } },
+	{ IDB_DUMMY, 30, 46, { 163, 106 }, { 163, 106 } },
+	{ IDB_DUMMY, 30, 46, { 199, 106 }, { 199, 106 } },
+	{ IDB_DUMMY, 30, 46, { 235, 106 }, { 235, 106 } },
+	{ IDB_DUMMY, 30, 46, { 271, 106 }, { 271, 106 } }
+};
+
+RES_PNG	RP_TIME_BOX				= { IDB_PIN_BOX, 210, 64, { 55, 97 }, { 55, 97 } };
+RES_PNG	RP_TIME_NUMBER[LENGTH_TIME]	=
+{
+	{ IDB_DUMMY, 46, 62, { 56, 98 }, { 56, 98 } },
+	{ IDB_DUMMY, 46, 62, { 110, 98 }, { 110, 98 } },
+	{ IDB_DUMMY, 46, 62, { 164, 98 }, { 164, 98 } },
+	{ IDB_DUMMY, 46, 62, { 218, 98 }, { 218, 98 } }
+};
+
+RES_PNG	RP_BRIGHTNESS_BOX		= { IDB_PASSWORD_BOX, 284, 48, { 18, 105 }, { 18, 105 } };
+RES_PNG	RP_BRIGHTNESS_FILL[MAX_BRIGHTNESS]	=
+{
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 19, 106 }, { 19, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 55, 106 }, { 55, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 91, 106 }, { 91, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 127, 106 }, { 127, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 163, 106 }, { 163, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 199, 106 }, { 199, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 235, 106 }, { 235, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 271, 106 }, { 271, 106 } }
+};
+
+RES_PNG	RP_SETTINGS_BOX			= { IDB_SETTINGS_BOX, 156, 64, { 82, 97 }, { 82, 97 } };
+RES_PNG	RP_SETTINGS_NUMBER[LENGTH_SETTINGS_BOX]	=
+{
+	{ IDB_DUMMY, 46, 62, { 83, 98 }, { 83, 98 } },
+	{ IDB_DUMMY, 46, 62, { 137, 98 }, { 137, 98 } },
+	{ IDB_DUMMY, 46, 62, { 191, 98 }, { 191, 98 } }
+};
+
+RES_PNG	RP_WEEKDAYS_BOX			= { IDB_WEEKDAYS_BOX, 248, 48, { 36, 105 }, { 36, 105 } };
+RES_PNG	RP_WEEKDAYS_FILL[MAX_WEEKDAYS]	=
+{
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 37, 106 }, { 37, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 73, 106 }, { 73, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 109, 106 }, { 109, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 145, 106 }, { 145, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 181, 106 }, { 181, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 217, 106 }, { 217, 106 } },
+	{ IDB_BRIGHTNESS_FILL, 30, 46, { 253, 106 }, { 253, 106 } }
+};
+
+RES_PNG	RP_IPADDRESS_BOX		= { IDB_IPADDRESS_BOX, 310, 32, { 5, 113 }, { 5, 113 } };
+RES_PNG	RP_IPADDRESS_NUMBER[LENGTH_IPADDRESS]	=
+{
+	{ IDB_DUMMY, 22, 30, { 6, 114 }, { 6, 114 } },
+	{ IDB_DUMMY, 22, 30, { 32, 114 }, { 32, 114 } },
+	{ IDB_DUMMY, 22, 30, { 58, 114 }, { 58, 114 } },
+	{ IDB_DUMMY, 22, 30, { 84, 114 }, { 84, 114 } },
+	{ IDB_DUMMY, 22, 30, { 110, 114 }, { 110, 114 } },
+	{ IDB_DUMMY, 22, 30, { 136, 114 }, { 136, 114 } },
+	{ IDB_DUMMY, 22, 30, { 162, 114 }, { 162, 114 } },
+	{ IDB_DUMMY, 22, 30, { 188, 114 }, { 188, 114 } },
+	{ IDB_DUMMY, 22, 30, { 214, 114 }, { 214, 114 } },
+	{ IDB_DUMMY, 22, 30, { 240, 114 }, { 240, 114 } },
+	{ IDB_DUMMY, 22, 30, { 266, 114 }, { 266, 114 } },
+	{ IDB_DUMMY, 22, 30, { 292, 114 }, { 292, 114 } }
+};
+RES_PNG	RP_PORT_BOX				= { IDB_NUMBER_BOX, 212, 48, { 54, 105 }, { 54, 105 } };
+RES_PNG	RP_PORT_NUMBER[LENGTH_PORT]	=
+{
+	{ IDB_DUMMY, 30, 46, { 55, 106 }, { 55, 106 } },
+	{ IDB_DUMMY, 30, 46, { 91, 106 }, { 91, 106 } },
+	{ IDB_DUMMY, 30, 46, { 127, 106 }, { 127, 106 } },
+	{ IDB_DUMMY, 30, 46, { 163, 106 }, { 163, 106 } },
+	{ IDB_DUMMY, 30, 46, { 199, 106 }, { 199, 106 } },
+	{ IDB_DUMMY, 30, 46, { 235, 106 }, { 235, 106 } }
+};
+
+RES_PNG	RP_INTRO_TOP			= { IDB_DUMMY, 320, 40, { 0, 24 }, { 0, 24 } };
+
+RES_PNG	RP_ANN_GPRS[MAX_GPRS_STATUS]	=
+{
+	{ IDB_GPRS_0, 20, 20, { 8, 2 }, { 8, 2 } },
+	{ IDB_GPRS_1, 20, 20, { 8, 2 }, { 8, 2 } },
+	{ IDB_GPRS_2, 20, 20, { 8, 2 }, { 8, 2 } },
+	{ IDB_GPRS_3, 20, 20, { 8, 2 }, { 8, 2 } },
+	{ IDB_GPRS_4, 20, 20, { 8, 2 }, { 8, 2 } },
+	{ IDB_GPRS_5, 20, 20, { 8, 2 }, { 8, 2 } }
+};
+RES_PNG	RP_ANN_OPER				= { IDB_DUMMY, 158, 24, { 84, 0 }, { 84, 0 } }; 
+#elif defined(MODEL_MT760)
+RES_PNG RP_HEADER				= { IDB_DUMMY, 480, 72, { 0, 36 }, { 0, 36 } };
+RES_PNG	RP_HEADER_LINE			= { IDB_HEADER_LINE, 450, 1, { 15, 109 }, { 15, 109 } };
+RES_PNG	RP_HEADER_DESC			= { IDB_DUMMY, 480, 48, { 0, 110 }, { 0, 110 } };
+RES_PNG	RP_MESSAGE				= { IDB_DUMMY, 480, 690, { 0, 110 }, { 0, 110 } };
+
+RES_PNG	RP_INPUT_W_DESC			= { IDB_DUMMY, 480, 117, { 0, 158 }, { 0, 158 } };
+RES_PNG	RP_INPUT_WO_DESC		= { IDB_DUMMY, 480, 165, { 0, 110 }, { 0, 110 } };
+
+RES_PNG	RP_YES_BTN				= { IDB_YES_BTN, 240, 70, { 240, 730 }, { 240, 730 } };
+RES_PNG	RP_NO_BTN				= { IDB_NO_BTN, 240, 70, { 0, 730 }, { 0, 730 } };
+RES_PNG	RP_YES_BTN_PRESS		= { IDB_YES_BTN_PRESS, 240, 70, { 240, 730 }, { 240, 730 } };
+RES_PNG	RP_NO_BTN_PRESS			= { IDB_NO_BTN_PRESS, 240, 70, { 0, 730 }, { 0, 730 } };
+RES_PNG	RP_YES_BTN_PAD			= { IDB_YES_BTN, 240, 70, { 240, 275 }, { 240, 275 } };
+RES_PNG	RP_NO_BTN_PAD			= { IDB_NO_BTN, 240, 70, { 0, 275 }, { 0, 275 } };
+RES_PNG	RP_YES_BTN_PAD_PRESS	= { IDB_YES_BTN_PRESS, 240, 70, { 240, 275 }, { 240, 275 } };
+RES_PNG	RP_NO_BTN_PAD_PRESS		= { IDB_NO_BTN_PRESS, 240, 70, { 0, 275 }, { 0, 275 } };
+
+RES_PNG	RP_ANNUNCIATOR			= { IDB_DUMMY, 480, 36, { 0, 0 }, { 0, 0 } };
+RES_PNG	RP_ANN_CONN[MAX_CONN_STATUS]	=
+{
+	{ IDB_CONN_0, 30, 30, { 48, 3 }, { 48, 3 } },
+	{ IDB_CONN_1, 30, 30, { 48, 3 }, { 48, 3 } },
+	{ IDB_CONN_2, 30, 30, { 48, 3 }, { 48, 3 } },
+	{ IDB_CONN_3, 30, 30, { 48, 3 }, { 48, 3 } },
+	{ IDB_CONN_4, 30, 30, { 48, 3 }, { 48, 3 } },
+	{ IDB_CONN_5, 30, 30, { 48, 3 }, { 48, 3 } }
+};
+RES_PNG	RP_ANN_COUNT			= { IDB_DUMMY, 30, 30, { 90, 3 }, { 90, 3 } };
+RES_PNG RP_ANN_BATT[MAX_BATT_STATUS]	=
+{
+	{ IDB_BATT_0, 30, 30, { 368, 3 }, { 368, 3 } },
+	{ IDB_BATT_1, 30, 30, { 368, 3 }, { 368, 3 } },
+	{ IDB_BATT_2, 30, 30, { 368, 3 }, { 368, 3 } },
+	{ IDB_BATT_3, 30, 30, { 368, 3 }, { 368, 3 } },
+	{ IDB_BATT_4, 30, 30, { 368, 3 }, { 368, 3 } },
+	{ IDB_BATT_5, 30, 30, { 368, 3 }, { 368, 3 } },
+	{ IDB_BATT_6, 30, 30, { 368, 3 }, { 368, 3 } },
+	{ IDB_BATT_7, 30, 30, { 368, 3 }, { 368, 3 } },
+	{ IDB_BATT_8, 30, 30, { 368, 3 }, { 368, 3 } }
+};
+RES_PNG	RP_ANN_TIME				= { IDB_DUMMY, 76, 36, { 404, 0 }, { 404, 0 } };
+
+RES_PNG	RP_MENU_BOTTOM_LINE		= { IDB_DUMMY, 480, 3, { 0, 797 }, { 0, 797 } };
+
+RES_PNG	RP_MENU_UNSELECTED[MENU_ITEMS_PER_PAGE]	=
+{
+	{ IDB_MENU_UNSELECTED, 480, 75, { 0, 37 }, { 0, 37 } },
+	{ IDB_MENU_UNSELECTED, 480, 75, { 0, 113 }, { 0, 113 } },
+	{ IDB_MENU_UNSELECTED, 480, 75, { 0, 189 }, { 0, 189 } },
+	{ IDB_MENU_UNSELECTED, 480, 75, { 0, 265 }, { 0, 265 } },
+	{ IDB_MENU_UNSELECTED, 480, 75, { 0, 341 }, { 0, 341 } },
+	{ IDB_MENU_UNSELECTED, 480, 75, { 0, 417 }, { 0, 417 } },
+	{ IDB_MENU_UNSELECTED, 480, 75, { 0, 493 }, { 0, 493 } },
+	{ IDB_MENU_UNSELECTED, 480, 75, { 0, 569 }, { 0, 569 } },
+	{ IDB_MENU_UNSELECTED, 480, 75, { 0, 645 }, { 0, 645 } },
+	{ IDB_MENU_UNSELECTED, 480, 75, { 0, 721 }, { 0, 721 } }
+};
+RES_PNG	RP_MENU_SELECTED[MENU_ITEMS_PER_PAGE]	=
+{
+	{ IDB_MENU_SELECTED, 480, 75, { 0, 37 }, { 0, 37 } },
+	{ IDB_MENU_SELECTED, 480, 75, { 0, 113 }, { 0, 113 } },
+	{ IDB_MENU_SELECTED, 480, 75, { 0, 189 }, { 0, 189 } },
+	{ IDB_MENU_SELECTED, 480, 75, { 0, 265 }, { 0, 265 } },
+	{ IDB_MENU_SELECTED, 480, 75, { 0, 341 }, { 0, 341 } },
+	{ IDB_MENU_SELECTED, 480, 75, { 0, 417 }, { 0, 417 } },
+	{ IDB_MENU_SELECTED, 480, 75, { 0, 493 }, { 0, 493 } },
+	{ IDB_MENU_SELECTED, 480, 75, { 0, 569 }, { 0, 569 } },
+	{ IDB_MENU_SELECTED, 480, 75, { 0, 645 }, { 0, 645 } },
+	{ IDB_MENU_SELECTED, 480, 75, { 0, 721 }, { 0, 721 } }
+};
+RES_PNG	RP_MENU_CHECKED[MENU_ITEMS_PER_PAGE]	=
+{
+	{ IDB_MENU_CHECKED, 480, 75, { 0, 37 }, { 0, 37 } },
+	{ IDB_MENU_CHECKED, 480, 75, { 0, 113 }, { 0, 113 } },
+	{ IDB_MENU_CHECKED, 480, 75, { 0, 189 }, { 0, 189 } },
+	{ IDB_MENU_CHECKED, 480, 75, { 0, 265 }, { 0, 265 } },
+	{ IDB_MENU_CHECKED, 480, 75, { 0, 341 }, { 0, 341 } },
+	{ IDB_MENU_CHECKED, 480, 75, { 0, 417 }, { 0, 417 } },
+	{ IDB_MENU_CHECKED, 480, 75, { 0, 493 }, { 0, 493 } },
+	{ IDB_MENU_CHECKED, 480, 75, { 0, 569 }, { 0, 569 } },
+	{ IDB_MENU_CHECKED, 480, 75, { 0, 645 }, { 0, 645 } },
+	{ IDB_MENU_CHECKED, 480, 75, { 0, 721 }, { 0, 721 } }
+};
+
+RES_PNG	RP_MENU_UP_UNSELECTED	= { IDB_MENU_UP_UNSELECTED, 480, 75, { 0, 37 }, { 0, 37 } };
+RES_PNG	RP_MENU_UP_SELECTED		= { IDB_MENU_UP_SELECTED, 480, 75, { 0, 37 }, { 0, 37 } };
+RES_PNG	RP_MENU_DN_UNSELECTED	= { IDB_MENU_DN_UNSELECTED, 480, 75, { 0, 721 }, { 0, 721 } };
+RES_PNG	RP_MENU_DN_SELECTED		= { IDB_MENU_DN_SELECTED, 480, 75, { 0, 721 }, { 0, 721 } };
+
+RES_PNG	RP_SWIPE				= { IDB_SWIPE, 276, 165, { 102, 310 }, { 102, 310 } };
+RES_PNG	RP_WAIT					= { IDB_WAIT, 165, 165, { 157, 310 }, { 157, 310 } };
+RES_PNG	RP_BOTTOM				= { IDB_BOTTOM, 480, 72, { 0, 656 }, { 0, 656 } };
+
+RES_PNG	RP_PASSWORD_BOX			= { IDB_PASSWORD_BOX, 426, 72, { 27, 156 }, { 27, 156 } };
+RES_PNG	RP_PASSWORD_ASTERISK[LENGTH_PASSWORD]	=
+{
+	{ IDB_PASSWORD_ASTERISK, 46, 70, { 28, 157 }, { 28, 157 } },
+	{ IDB_PASSWORD_ASTERISK, 46, 70, { 82, 157 }, { 82, 157 } },
+	{ IDB_PASSWORD_ASTERISK, 46, 70, { 136, 157 }, { 136, 157 } },
+	{ IDB_PASSWORD_ASTERISK, 46, 70, { 190, 157 }, { 190, 157 } },
+	{ IDB_PASSWORD_ASTERISK, 46, 70, { 244, 157 }, { 244, 157 } },
+	{ IDB_PASSWORD_ASTERISK, 46, 70, { 298, 157 }, { 298, 157 } },
+	{ IDB_PASSWORD_ASTERISK, 46, 70, { 352, 157 }, { 352, 157 } },
+	{ IDB_PASSWORD_ASTERISK, 46, 70, { 406, 157 }, { 406, 157 } }
+};
+
+RES_PNG	RP_PIN_BOX				= { IDB_PIN_BOX, 312, 96, { 84, 168 }, { 84, 168 } };
+RES_PNG	RP_PIN_ASTERISK[LENGTH_PIN]	=
+{
+	{ IDB_PIN_ASTERISK, 70, 94, { 85, 169 }, { 85, 169 } },
+	{ IDB_PIN_ASTERISK, 70, 94, { 165, 169 }, { 165, 169 } },
+	{ IDB_PIN_ASTERISK, 70, 94, { 245, 169 }, { 245, 169 } },
+	{ IDB_PIN_ASTERISK, 70, 94, { 325, 169 }, { 325, 169 } }
+};
+
+RES_PNG	RP_RESULT				= { IDB_DUMMY, 480, 400, { 0, 400 }, { 0, 400 } };
+RES_PNG	RP_RESULT_TEXT			= { IDB_DUMMY, 336, 370, { 48, 430 }, { 96, 430 } };
+RES_PNG	RP_SUCCESSFUL			= { IDB_SUCCESSFUL, 96, 96, { 24, 288 }, { 360, 288 } };
+RES_PNG	RP_UNSUCCESSFUL			= { IDB_UNSUCCESSFUL, 96, 96, { 24, 288 }, { 360, 288 } };
+
+RES_PNG	RP_PRINT				= { IDB_PRINT, 160, 136, { 160, 310 }, { 160, 310 } };
+RES_PNG	RP_PRINT_MESSAGE		= { IDB_DUMMY, 480, 60, { 0, 740 }, { 0, 740 } };
+
+RES_PNG	RP_TRACE_NO_BOX			= { IDB_NUMBER_BOX, 318, 72, { 81, 156 }, { 81, 156 } };
+RES_PNG	RP_TRACE_NO_NUMBER[LENGTH_TRACENO]	=
+{
+	{ IDB_DUMMY, 46, 70, { 82, 157 }, { 82, 157 } },
+	{ IDB_DUMMY, 46, 70, { 136, 157 }, { 136, 157 } },
+	{ IDB_DUMMY, 46, 70, { 190, 157 }, { 190, 157 } },
+	{ IDB_DUMMY, 46, 70, { 244, 157 }, { 244, 157 } },
+	{ IDB_DUMMY, 46, 70, { 298, 157 }, { 298, 157 } },
+	{ IDB_DUMMY, 46, 70, { 352, 157 }, { 352, 157 } }
+};
+
+RES_PNG	RP_CITY_CODE_BOX		= { IDB_PIN_BOX, 312, 96, { 84, 144 }, { 84, 144 } };
+RES_PNG	RP_CITY_CODE_NUMBER[LENGTH_CITY_CODE]	=
+{
+	{ IDB_DUMMY, 70, 94, { 85, 145 }, { 85, 145 } },
+	{ IDB_DUMMY, 70, 94, { 165, 145 }, { 165, 145 } },
+	{ IDB_DUMMY, 70, 94, { 245, 145 }, { 245, 145 } },
+	{ IDB_DUMMY, 70, 94, { 325, 145 }, { 325, 145 } }
+};
+
+RES_PNG	RP_PHONE_BOX			= { IDB_PHONE_BOX, 450, 48, { 15, 168 }, { 15, 168 } };
+RES_PNG	RP_PHONE_NUMBER[LENGTH_PHONE_BOX]	=
+{
+	{ IDB_DUMMY, 30, 46, { 16, 169 }, { 16, 169 } },
+	{ IDB_DUMMY, 30, 46, { 54, 169 }, { 54, 169 } },
+	{ IDB_DUMMY, 30, 46, { 92, 169 }, { 92, 169 } },
+	{ IDB_DUMMY, 30, 46, { 130, 169 }, { 130, 169 } },
+	{ IDB_DUMMY, 30, 46, { 168, 169 }, { 168, 169 } },
+	{ IDB_DUMMY, 30, 46, { 206, 169 }, { 206, 169 } },
+	{ IDB_DUMMY, 30, 46, { 244, 169 }, { 244, 169 } },
+	{ IDB_DUMMY, 30, 46, { 282, 169 }, { 282, 169 } },
+	{ IDB_DUMMY, 30, 46, { 320, 169 }, { 320, 169 } },
+	{ IDB_DUMMY, 30, 46, { 358, 169 }, { 358, 169 } },
+	{ IDB_DUMMY, 30, 46, { 396, 169 }, { 396, 169 } },
+	{ IDB_DUMMY, 30, 46, { 434, 169 }, { 434, 169 } }
+};
+
+RES_PNG	RP_DATE_BOX				= { IDB_PASSWORD_BOX, 426, 72, { 27, 156 }, { 27, 156 } };
+RES_PNG	RP_DATE_NUMBER[LENGTH_DATE]	=
+{
+	{ IDB_DUMMY, 46, 70, { 28, 157 }, { 28, 157 } },
+	{ IDB_DUMMY, 46, 70, { 82, 157 }, { 82, 157 } },
+	{ IDB_DUMMY, 46, 70, { 136, 157 }, { 136, 157 } },
+	{ IDB_DUMMY, 46, 70, { 190, 157 }, { 190, 157 } },
+	{ IDB_DUMMY, 46, 70, { 244, 157 }, { 244, 157 } },
+	{ IDB_DUMMY, 46, 70, { 298, 157 }, { 298, 157 } },
+	{ IDB_DUMMY, 46, 70, { 352, 157 }, { 352, 157 } },
+	{ IDB_DUMMY, 46, 70, { 406, 157 }, { 406, 157 } }
+};
+
+RES_PNG	RP_TIME_BOX				= { IDB_PIN_BOX, 312, 96, { 84, 144 }, { 84, 144 } };
+RES_PNG	RP_TIME_NUMBER[LENGTH_TIME]	=
+{
+	{ IDB_DUMMY, 70, 94, { 85, 145 }, { 85, 145 } },
+	{ IDB_DUMMY, 70, 94, { 165, 145 }, { 165, 145 } },
+	{ IDB_DUMMY, 70, 94, { 245, 145 }, { 245, 145 } },
+	{ IDB_DUMMY, 70, 94, { 325, 145 }, { 325, 145 } }
+};
+
+RES_PNG	RP_BRIGHTNESS_BOX		= { IDB_PASSWORD_BOX, 426, 72, { 27, 161 }, { 27, 161 } };
+RES_PNG	RP_BRIGHTNESS_FILL[MAX_BRIGHTNESS]	=
+{
+	{ IDB_BRIGHTNESS_FILL, 46, 70, { 28, 162 }, { 28, 162 } },
+	{ IDB_BRIGHTNESS_FILL, 46, 70, { 82, 162 }, { 82, 162 } },
+	{ IDB_BRIGHTNESS_FILL, 46, 70, { 136, 162 }, { 136, 162 } },
+	{ IDB_BRIGHTNESS_FILL, 46, 70, { 190, 162 }, { 190, 162 } },
+	{ IDB_BRIGHTNESS_FILL, 46, 70, { 244, 162 }, { 244, 162 } },
+	{ IDB_BRIGHTNESS_FILL, 46, 70, { 298, 162 }, { 298, 162 } },
+	{ IDB_BRIGHTNESS_FILL, 46, 70, { 352, 162 }, { 352, 162 } },
+	{ IDB_BRIGHTNESS_FILL, 46, 70, { 406, 162 }, { 406, 162 } }
+};
+
+RES_PNG	RP_SETTINGS_BOX			= { IDB_SETTINGS_BOX, 232, 96, { 124, 144 }, { 124, 144 } };
+RES_PNG	RP_SETTINGS_NUMBER[LENGTH_SETTINGS_BOX]	=
+{
+	{ IDB_DUMMY, 70, 94, { 125, 145 }, { 125, 145 } },
+	{ IDB_DUMMY, 70, 94, { 205, 145 }, { 205, 145 } },
+	{ IDB_DUMMY, 70, 94, { 285, 145 }, { 285, 145 } }
+};
+
+RES_PNG	RP_WEEKDAYS_BOX		= { IDB_WEEKDAYS_BOX, 372, 72, { 54, 161 }, { 54, 161 } };
+RES_PNG	RP_WEEKDAYS_FILL[MAX_WEEKDAYS]	=
+{
+	{ IDB_BRIGHTNESS_FILL, 46, 70, { 55, 162 }, { 55, 162 } },
+	{ IDB_BRIGHTNESS_FILL, 46, 70, { 109, 162 }, { 109, 162 } },
+	{ IDB_BRIGHTNESS_FILL, 46, 70, { 163, 162 }, { 163, 162 } },
+	{ IDB_BRIGHTNESS_FILL, 46, 70, { 217, 162 }, { 217, 162 } },
+	{ IDB_BRIGHTNESS_FILL, 46, 70, { 271, 162 }, { 271, 162 } },
+	{ IDB_BRIGHTNESS_FILL, 46, 70, { 325, 162 }, { 325, 162 } },
+	{ IDB_BRIGHTNESS_FILL, 46, 70, { 379, 162 }, { 379, 162 } }
+};
+
+RES_PNG	RP_IPADDRESS_BOX		= { IDB_PHONE_BOX, 450, 48, { 15, 168 }, { 15, 168 } };
+RES_PNG	RP_IPADDRESS_NUMBER[LENGTH_IPADDRESS]	=
+{
+	{ IDB_DUMMY, 30, 46, { 16, 169 }, { 16, 169 } },
+	{ IDB_DUMMY, 30, 46, { 54, 169 }, { 54, 169 } },
+	{ IDB_DUMMY, 30, 46, { 92, 169 }, { 92, 169 } },
+	{ IDB_DUMMY, 30, 46, { 130, 169 }, { 130, 169 } },
+	{ IDB_DUMMY, 30, 46, { 168, 169 }, { 168, 169 } },
+	{ IDB_DUMMY, 30, 46, { 206, 169 }, { 206, 169 } },
+	{ IDB_DUMMY, 30, 46, { 244, 169 }, { 244, 169 } },
+	{ IDB_DUMMY, 30, 46, { 282, 169 }, { 282, 169 } },
+	{ IDB_DUMMY, 30, 46, { 320, 169 }, { 320, 169 } },
+	{ IDB_DUMMY, 30, 46, { 358, 169 }, { 358, 169 } },
+	{ IDB_DUMMY, 30, 46, { 396, 169 }, { 396, 169 } },
+	{ IDB_DUMMY, 30, 46, { 434, 169 }, { 434, 169 } }
+};
+RES_PNG	RP_PORT_BOX				= { IDB_NUMBER_BOX, 318, 72, { 81, 156 }, { 81, 156 } };
+RES_PNG	RP_PORT_NUMBER[LENGTH_PORT]	=
+{
+	{ IDB_DUMMY, 46, 70, { 82, 157 }, { 82, 157 } },
+	{ IDB_DUMMY, 46, 70, { 136, 157 }, { 136, 157 } },
+	{ IDB_DUMMY, 46, 70, { 190, 157 }, { 190, 157 } },
+	{ IDB_DUMMY, 46, 70, { 244, 157 }, { 244, 157 } },
+	{ IDB_DUMMY, 46, 70, { 298, 157 }, { 298, 157 } },
+	{ IDB_DUMMY, 46, 70, { 352, 157 }, { 352, 157 } }
+};
+
+RES_PNG	RP_INTRO_DATE			= { IDB_WHITE, 440, 44, { 20, 48 }, { 20, 48 } };
+RES_PNG	RP_INTRO_TIME			= { IDB_WHITE, 440, 78, { 20, 92 }, { 20, 92 } };
+
+RES_PNG	RP_ANN_GPRS[MAX_GPRS_STATUS]	=
+{
+	{ IDB_GPRS_0, 30, 30, { 12, 3 }, { 12, 3 } },
+	{ IDB_GPRS_1, 30, 30, { 12, 3 }, { 12, 3 } },
+	{ IDB_GPRS_2, 30, 30, { 12, 3 }, { 12, 3 } },
+	{ IDB_GPRS_3, 30, 30, { 12, 3 }, { 12, 3 } },
+	{ IDB_GPRS_4, 30, 30, { 12, 3 }, { 12, 3 } },
+	{ IDB_GPRS_5, 30, 30, { 12, 3 }, { 12, 3 } }
+};
+RES_PNG	RP_ANN_OPER				= { IDB_DUMMY, 234, 36, { 128, 0 }, { 128, 0 } };
+
+RES_PNG	RP_KEYPAD_BACK			= { IDB_DUMMY, 480, 455, { 0, 345 }, { 0, 345 } };
+RES_PNG	RP_KEYPAD[MAX_KEYPAD]	=
+{
+	{ IDB_DUMMY, 160, 114, { 0, 345 }, { 0, 345 } },
+	{ IDB_DUMMY, 160, 114, { 160, 345 }, { 160, 345 } },
+	{ IDB_DUMMY, 160, 114, { 320, 345 }, { 320, 345 } },
+	{ IDB_DUMMY, 160, 114, { 0, 459 }, { 0, 459 } },
+	{ IDB_DUMMY, 160, 114, { 160, 459 }, { 160, 459 } },
+	{ IDB_DUMMY, 160, 114, { 320, 459 }, { 320, 459 } },
+	{ IDB_DUMMY, 160, 114, { 0, 573 }, { 0, 573 } },
+	{ IDB_DUMMY, 160, 114, { 160, 573 }, { 160, 573 } },
+	{ IDB_DUMMY, 160, 114, { 320, 573 }, { 320, 573 } },
+	{ IDB_DUMMY, 160, 114, { 160, 687 }, { 160, 687 } },
+	{ IDB_DUMMY, 160, 114, { 0, 687 }, { 0, 687 } },
+	{ IDB_KEYPAD_CLEAR, 160, 114, { 320, 687 }, { 320, 687 } },
+	{ IDB_KEYPAD_CLEAR_PRESS, 160, 114, { 320, 687 }, { 320, 687 } }
+};
+
+RES_PNG RP_FNKEY[MAX_FNKEY]	=
+{
+	{ IDB_FNKEY, 120, 72, { 0, 728 }, { 0, 728 } },
+	{ IDB_FNKEY, 120, 72, { 120, 728 }, { 120, 728 } },
+	{ IDB_FNKEY, 120, 72, { 240, 728 }, { 240, 728 } },
+	{ IDB_FNKEY, 120, 72, { 360, 728 }, { 360, 728 } }
+};
+RES_PNG RP_FNKEY_PRESS[MAX_FNKEY]	=
+{
+	{ IDB_FNKEY_PRESS, 120, 72, { 0, 728 }, { 0, 728 } },
+	{ IDB_FNKEY_PRESS, 120, 72, { 120, 728 }, { 120, 728 } },
+	{ IDB_FNKEY_PRESS, 120, 72, { 240, 728 }, { 240, 728 } },
+	{ IDB_FNKEY_PRESS, 120, 72, { 360, 728 }, { 360, 728 } }
+};
+#endif
